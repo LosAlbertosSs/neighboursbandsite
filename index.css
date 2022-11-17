@@ -176,6 +176,11 @@ n2tab li {
 .text666 ul li {
     color: orange;
     list-style-type: none;
+    
+    .text666 {
+    color: orange;
+    list-style-type: none;
+    
 }
 .text6667 ul li {
     color: orange;
