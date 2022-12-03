@@ -1,6 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
     <title>neighbours - main</title>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -13,7 +13,7 @@
     <ul>
         <li><a href="index.html">Strona Główna</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="#">Utwory</a></li>
+        <li><a href="Utwory.html">Utwory</a></li>
         <li><a href="#">Wydarzenia</a></li>
     </ul>
 
@@ -30,107 +30,168 @@
             <h1>Witaj na stronie zespołu Neighbours.</h1>
             <img src="logo.jpg" />
         </font>
-        <center>
-            <div class="text666"><h2>Tutaj szukamy nazw utworów:</h2><br /><br /></div>
+            <div class="textorange"><h2>Wyszukiwarka:</h2><br /><br /></div>
             <br /><br /><br /><br />
-        </center>
-     </center>
-            <div class="text6667">
+        
+    </center>
+
                 <h2>
-                    <ol>
 
-                        <li>Agnieszka już dawno tutaj nie mieszka</li>
-                        <li>Ale Jazz</li>
-                        <li>Bad romance</li>
-                        <li>Bądź przy mnie</li>
-                        <li>Baju Baj</li>
-                        <li>Bo jesteś Ty</li>
-                        <li>Bo Jo Cie Kochom</li>
-                        <li>Can't get you out of my head</li>
-                        <li>Chodź, Pomaluj Mój Świat</li>
-                        <li>Chwile jak Te</li>
-                        <li>Co mi Panie dasz</li>
-                        <li>Cool Kids</li>
-                        <li>Cry Cry</li>
-                        <li>Cykady na Cykladach</li>
-                        <li>Daj mi tę noc</li>
-                        <li>Długa noc</li>
-                        <li>Don't Say Goodbye'</li>
-                        <li>DZIEJE SIĘ</li>
-                        <li>Every Breath You Take</li>
-                        <li>Get Lucky</li>
-                        <li>Happy - From Despicable Me 2</li>
-                        <li>Have You Ever Seen The Rain</li>
-                        <li>Hot Stuff</li>
-                        <li>I Follow Rivers</li>
-                        <li>I'm Still Standing</li>
-                        <li>I Wanna Dance with Somebody...</li>
-                        <li>W Will Survive</li>
-                        <li>Jeszcze Będzie Pięknie</li>
-                        <li>Kawałek Do Tańca</li>
-                        <li>Kocham Cię, Kochanie Moje</li>
-                        <li>Kolorowe jarmarki</li>
-                        <li>Konik Na Biegunach</li>
-                        <li>Kot bez ogona</li>
-                        <li>Krakowski spleen</li>
-                        <li>Kryzysowa narzeczona</li>
-                        <li>Let Her Go</li>
-                        <li>Levitating</li>
-                        <li>Livin' On a Prayer</li>
-                        <li>Małgośka</li>
-                        <li>Mamona</li>
-                        <li>Meluzyna</li>
-                        <li>Miłość w Zakopanem</li>
-                        <li>Mniej niż zero</li>
-                        <li>Moja Duma</li>
-                        <li>Mój jest ten kawałek podłogi</li>
-                        <li>My Cyganie</li>
-                        <li>Naj Story</li>
-                        <li>Nie Płacz Ewka</li>
-                        <li>No Roots</li>
-                        <li>ostatnia nadzieja</li>
-                        <li>Ostatni raz zatańczysz ze mną</li>
-                        <li>O tobie kochana</li>
-                        <li>Płynie w nas gorąca krew</li>
-                        <li>Prawy Do Lewego</li>
-                        <li>Przeżyj to sam</li>
-                        <li>Ramię w Ramię</li>
-                        <li>Sing It Back</li>
-                        <li>słodkiegom, miłego życia</li>
-                        <li>Sobie i Wam</li>
-                        <li>Stand by Me</li>
-                        <li>Stolen Dance</li>
-                        <li>Stumblin'In</li>
-                        <li>Szalona</li>
-                        <li>Szminki Róż</li>
-                        <li>Takiego Janicka</li>
-                        <li>Teksanski</li>
-                        <li>Testosteron</li>
-                        <li>Tylko powiedz czego chcesz</li>
-                        <li>Unstoppable</li>
-                        <li>Wechikuł Czasu/To byłby cud</li>
-                        <li>Wielka dama tańczy sama</li>
-                        <li>W nieznane</li>
-                        <li>Wszystko mi mówi, że mnie ktoś pokochał</li>
-                        <li>Wymarzona</li>
-                        <li>Zabiorę Cię</li>
-                        <li>Zamki na piasku</li>
-                        <li>Zanim pójdę</li>
-                        <li>Zanim pójdę</li>
-                        <li>Za tobą pójdę jak na bal</li>
-                        <li>Zawsze tam gdzie Ty</li>
-                        <li>Zawsze tam gdzie ty</li>
-                        <li>Zawsze Z Tobą Chiałbym Być...</li>
-                        <li>Zombie</li>
-                        <li>Z Tobą Nie Umiem Wygrać</li>
-                        <li>Zwierzenia Ryśka czyli jedzie pociąg</li>
+                    <style>
+                        #myInput {
+                          background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+                          background-position: 10px 12px; /* Position the search icon */
+                          background-repeat: no-repeat; /* Do not repeat the icon image */
+                          width: 100%; /* Full-width */
+                          font-size: 16px; /* Increase font-size */
+                          padding: 12px 20px 12px 40px; /* Add some padding */
+                          border: 1px solid #ddd; /* Add a grey border */
+                          margin-bottom: 12px; /* Add some space below the input */
+                        }
+
+                        #myUL {
+                          /* Remove default list styling */
+                          list-style-type: none;
+                          padding: 0;
+                          margin: 0;
+                        }
+
+                        #myUL li a {
+                          border: 1px solid #ddd; /* Add a border to all links */
+                          margin-top: -1px; /* Prevent double borders */
+                          background-color: #808080; /* Grey background color */
+                          padding: 12px; /* Add some padding */
+                          text-decoration: none; /* Remove default text underline */
+                          font-size: 18px; /* Increase the font-size */
+                          color: black; /* Add a black text color */
+                          display: block; /* Make it into a block element to fill the whole list */
+                        }
+
+                        #myUL li a:hover:not(.header) {
+                          background-color: #eee; /* Add a hover effect to all links, except for headers */
+                        }
+                    </style>
 
 
 
-                    </ol>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+                        <li><a href="#">Agnieszka już dawno tutaj nie mieszka</a></li>
+                        <li><a href="#">Ale Jazz</a></li>
+                        <li><a href="#">Bad romance</a></li>
+                        <li><a href="#">Bądź przy mnie</a></li>
+                        <li><a href="#">Baju Baj</a></li>
+                        <li><a href="#">Bo jesteś Ty</a></li>
+                        <li><a href="#">Bo Jo Cie Kochom</a></li>
+                        <li><a href="#">Can't get you out of my head</a></li>
+                        <li><a href="#">Chodź, Pomaluj Mój Świat</a></li>
+                        <li><a href="#">Chwile jak Te</a></li>
+                        <li><a href="#">Co mi Panie dasz</a></li>
+                        <li><a href="#">Cool Kids</a></li>
+                        <li><a href="#">Cry Cry</a></li>
+                        <li><a href="#">Cykady na Cykladach</a></li>
+                        <li><a href="#">Daj mi tę noc</a></li>
+                        <li><a href="#">Długa noc</a></li>
+                        <li><a href="#">Don't Say Goodbye</a></li>
+                        <li><a href="#">DZIEJE SIĘ</a></li>
+                        <li><a href="#">Every Breath You Take</a></li>
+                        <li><a href="#">Get Lucky</a></li>
+                        <li><a href="#">Happy - From Despicable Me 2</a></li>
+                        <li><a href="#">Have You Ever Seen The Rain</a></li>
+                        <li><a href="#">Hot Stuff</a></li>
+                        <li><a href="#">I Follow Rivers</a></li>
+                        <li><a href="#">I'm Still Standing</a></li>
+                        <li><a href="#">I Wanna Dance with Somebody...</a></li>
+                        <li><a href="#">W Will Survive</a></li>
+                        <li><a href="#">Jeszcze Będzie Pięknie</a></li>
+                        <li><a href="#">Kawałek Do Tańca</a></li>
+                        <li><a href="#">Kocham Cię, Kochanie Moje</a></li>
+                        <li><a href="#">Kolorowe jarmarki</a></li>
+                        <li><a href="#">Konik Na Biegunach</a></li>
+                        <li><a href="#">Kot bez ogona</a></li>
+                        <li><a href="#">Krakowski spleen</a></li>
+                        <li><a href="#">Kryzysowa narzeczona</a></li>
+                        <li><a href="#">Let Her Go</a></li>
+                        <li><a href="#">Levitating</a></li>
+                        <li><a href="#">Livin' On a Prayer</a></li>
+                        <li><a href="#">Małgośka</a></li>
+                        <li><a href="#">Mamona</a></li>
+                        <li><a href="#">Meluzyna</a></li>
+                        <li><a href="#">Miłość w Zakopanem</a></li>
+                        <li><a href="#">Mniej niż zero</a></li>
+                        <li><a href="#">Moja Duma</a></li>
+                        <li><a href="#">Mój jest ten kawałek podłogi</a></li>
+                        <li><a href="#">My Cyganie</a></li>
+                        <li><a href="#">Naj Story</a></li>
+                        <li><a href="#">Nie Płacz Ewka</a></li>
+                        <li><a href="#">No Roots</a></li>
+                        <li><a href="#">ostatnia nadzieja</a></li>
+                        <li><a href="#">Ostatni raz zatańczysz ze mną</a></li>
+                        <li><a href="#">O tobie kochana</a></li>
+                        <li><a href="#">Płynie w nas gorąca krew</a></li>
+                        <li><a href="#">Prawy Do Lewego</a></li>
+                        <li><a href="#">Przeżyj to sam</a></li>
+                        <li><a href="#">Ramię w Ramię</a></li>
+                        <li><a href="#">Sing It Back</a></li>
+                        <li><a href="#">słodkiegom, miłego życia</a></li>
+                        <li><a href="#">Sobie i Wam</a></li>
+                        <li><a href="#">Stand by Me</a></li>
+                        <li><a href="#">Stolen Dance</a></li>
+                        <li><a href="#">Stumblin'In</a></li>
+                        <li><a href="#">Szalona</a></li>
+                        <li><a href="#">Szminki Róż</a></li>
+                        <li><a href="#">Takiego Janicka</a></li>
+                        <li><a href="#">Teksanski</a></li>
+                        <li><a href="#">Testosteron</a></li>
+                        <li><a href="#">Tylko powiedz czego chcesz</a></li>
+                        <li><a href="#">Unstoppable</a></li>
+                        <li><a href="#">Wechikuł Czasu/To byłby cud</a></li>
+                        <li><a href="#">Wielka dama tańczy sama</a></li>
+                        <li><a href="#">W nieznane</a></li>
+                        <li><a href="#">Wszystko mi mówi, że mnie ktoś pokochał</a></li>
+                        <li><a href="#">Wymarzona</a></li>
+                        <li><a href="#">Zabiorę Cię</a></li>
+                        <li><a href="#">Zamki na piasku</a></li>
+                        <li><a href="#">Zanim pójdę</a></li>
+                        <li><a href="#">Zanim pójdę</a></li>
+                        <li><a href="#">Za tobą pójdę jak na bal</a></li>
+                        <li><a href="#">Zawsze tam gdzie Ty</a></li>
+                        <li><a href="#">Zawsze tam gdzie ty</a></li>
+                        <li><a href="#">Zawsze Z Tobą Chiałbym Być...</a></li>
+                        <li><a href="#">Zombie</a></li>
+                        <li><a href="#">Z Tobą Nie Umiem Wygrać</a></li>
+                        <li><a href="#">Zwierzenia Ryśka czyli jedzie pociąg</a></li>
+</ul>
+
+
+                    </ul>
                 </h2>
             </div>
-            <br />
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+<br />
             <br />
           
 
